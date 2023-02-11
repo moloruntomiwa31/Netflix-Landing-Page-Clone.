@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --RED-COLOR: red;
+    --WHITE: white;
+    --PADDING: 20px;
+    --FONT-SIZE: 1.3rem;
+    --BLACK: black;
+    --FONT-TYPE: sans-serif;
+}
+body {font-size: var(--FONT-SIZE); background-color: var(--BLACK); font-family: var(--FONT-TYPE);}
+h1, h4 {color: var(--WHITE);font-weight: bolder;}
+.btn-nav {
+    background-color: var(--RED-COLOR);
+    color: var(--WHITE);
+}
+.netflix-header {width: 100%;}
+.container {margin-top: var(--PADDING);}
+.info {text-align: center;}
+.hero {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.89)), url("./assets/back.jpg");
+    height: 100vh;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--WHITE);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+/* .form-control {
+    background: transparent;
+} */
+.input-group {width: 70%; max-width: 80%;}
+.input-group-append {
+    display: none;
+}
+.btn-gs {
+    display: block;
+    color: var(--WHITE);
+    background-color: var(--RED-COLOR);
+    border-radius: 0;
+    width: 400px;
+    max-width: 40%;
+    height: fit-content;
+    max-height: 200px;
+    cursor: pointer;
+}
+.text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 85%;
+    max-width: 100%;
+}
+.input-group-text, .form-control {
+    border-radius: 0%;
+    padding: 10px;
+}
+.input-group-text {
+    background-color: var(--RED-COLOR);
+    border: none;
+    color: var(--WHITE);
+}
+.input-group-text:hover {background-color: rgb(253, 23, 23);}
+.tv-txt {color: var(--WHITE);}
+hr {
+    background-color: grey;
+    height: 10px;
+    min-width: 100%;
+    margin-top: var(--PADDING);
+}
+.drop-down_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.drop-down {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 0.5rem;
+    width: 100%;
+}
+.drop-down > div {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    min-width: 100%;
+    height: 70px;
+    padding: 10px;
+}
+.email-field {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.footer-links a {
+    /* text-decoration: none; */
+    display: block;
+    color: #737373;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+/* .footer-links a:hover {
+    text-decoration: underline;
+} */
+.footer-items {
+    display: flex;
+    flex-direction: column;
+}
+.join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.language {
+    margin-top: 25px;
+    padding: 5px;
+    width: 120px;
+    background: transparent;
+    color: var(--WHITE);
+}
+.netflix {margin-top: 10px;}
+.accordion {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.accordion-item {
+    border-radius: 0;
+    margin-top: 10px;
+    border: none;
+}
+.accordion-collapse, .collapsed {background-color: rgba(0, 0, 0, 0.6);}
+.accordion-button  {
+    content: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--WHITE);
+    font-size: 1.4rem;
+}
+.accordion-item:first-of-type  {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.accordion-item:last-of-type  {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* .accordion-button::after {content: "\002B";} */
+.accordion-button:focus {border-color: none; box-shadow: none;}
+.accordion-button:not(.collapsed) {
+    color: var(--WHITE);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+@media all and (max-width: 768px) {
+    .col-md-6 {
+        text-align: center;
+    } 
+} 
+@media all and (min-width:668px) {
+    .footer-items {
+        flex-direction: row;
+        gap: 30%;
+    }
+    .info {text-align: left;}
+    body {font-size: 1.5rem;}
+}
+@media all and (min-width: 768px) {
+    .drop-down {
+        width: 100%;
+    }
+    span {
+        display: inline;
+    }
+    .span-parent {
+        display: inline;
+    }
+    .row {text-align: none;}
+    .input-group-append {
+        display: block;
+        max-width: 100%;
+    }
+    .btn-gs {display: none;}
+    .input-group {
+        max-width: 100%;
+    }
+    /* body {font-size: 1.8rem;} */
+}
