@@ -159,6 +159,14 @@ hr {
     color: var(--WHITE);
     font-size: 1.4rem;
 }
+.accordion-item:first-of-type .accordion-button{
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}
+.accordion-header  {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 .accordion-item:first-of-type  {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
